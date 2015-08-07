@@ -179,11 +179,19 @@ latex_elements = {
 
 'classoptions': ',oneside',
 
+'babel': '\\usepackage[english]{babel}',
+#'babel':'',   #必須
+
+'inputenc':'', #必須
+
+'utf8extra':'', #必須
+
+
 # Additional stuff for the LaTeX preamble.
-'preamble': '''
+'preamble': r'''
 \usepackage{xeCJK}
-\setCJKmainfont[BoldFont=SimHei, ItalicFont=KaiTi]{SimSun}
-\setCJKmonofont[Scale=0.9]{KaiTi}
+\setCJKmainfont[BoldFont=SimHei, ItalicFont=STKaiti]{SimSun}
+\setCJKmonofont[Scale=0.9]{STKaiti}
 \setCJKfamilyfont{song}[BoldFont=SimSun]{SimSun}
 \setCJKfamilyfont{sf}[BoldFont=SimSun]{SimSun}
 ''',
